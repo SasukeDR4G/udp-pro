@@ -5,7 +5,7 @@ const numCPUs = require('os').cpus().length;
 const args = process.argv;
 
 const address = args[2];
-const port = args[3];
+const times = args[4] !== undefined ? args[4] : 1000;
 const times = args[4] ?? 1000;
 
 if (!address || !port) {
